@@ -5,12 +5,35 @@
 
 body {
     font-family: monospace;
-    background-color: #040926;
-    color: #1BCBF2;
 }
 
 hr {
     height: 1px;
-    background-color: #114BBF;
-    border: 0px;
+    background-color: #040926;
+    border: 1px;
+}
+
+.groupCommand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 15px;
+    gap: 15px;
+}
+
+.cardCommand {
+    width: calc(25% - 15px);
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    background-color: #1BCBF2;
+}
+
+.cardCommand:hover {
+    background-color: #071040;
+    scale: 102.5%;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translateY(-5%);
 }
