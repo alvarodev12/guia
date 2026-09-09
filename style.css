@@ -2,3 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    font-family: monospace;
+    background-color: #040926;
+    color: #1BCBF2;
+}
+
+hr {
+    height: 1px;
+    background-color: #114BBF;
+    border: 0px;
+}
