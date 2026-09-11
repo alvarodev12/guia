@@ -3,67 +3,33 @@
     padding: 0px;
 }
 
-body {
-    font-family: monospace;
-    font-size: 16px;
-}
-
-header {
-    height: 8vh;
-    background-color: #040926;
-    color: #ffffff;
-}
-
-main {
-    height: 85vh;
-    background-color: #040926;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-block: auto;
-    gap: 10px;
-}
-
-hr {
-    height: 1px;
-    background-color: #ffffff;
-    border: 1px;
-}
-
 .groupCommand {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-inline: 15px;
+    flex-direction: column;
     gap: 15px;
 }
 
 .cardCommand {
-    width: calc(25% - 20px);
-    border: 1px solid #000000;
-    border-radius: 25px;
-    padding: 10px 15px;
-    transition: 0.3s;
-    background-color: #1BCBF2;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    width: 85vh;
+    height: 25vh;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.cardCommand:hover {
-    background-color: #071040;
-    scale: 102.5%;
-    cursor: pointer;
-    color: #ffffff;
-    transform: translateY(-5%);
-    box-shadow: 0px 0px 10px #1BCBF2;
-}
+@media screen and (min-width: 768px) {
+    .groupCommand {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-footer {
-    height: 7vh;
-    background-color: #040926;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .cardCommand {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        width: calc(25% - 15px);
+        min-height: fit-content;
+    }
 }
