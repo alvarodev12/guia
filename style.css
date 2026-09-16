@@ -49,13 +49,13 @@ main h2 {
     min-width: calc(50vw - 30px);
 }
 
-/* .icone {
+.icone {
     width: 30px;
     height: 30px;
-    fill: #0caeee;
+    fill: #000000;
     stroke: #1BCBF2;
     stroke-width: 10px;
-} */
+}
 
 @media only screen and (min-width: 600px) {
     body {
@@ -84,10 +84,10 @@ main h2 {
         width: calc(50vw - 30px);
     }
 
-    /* .icone {
+    .icone {
         height: 40px;
         width: 40px;
-    } */
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -122,9 +122,18 @@ main h2 {
         width: calc(25vw -20px);
     }
 
-    /* .icone {
+    .icone {
         height: 50px;
         width: 50px;
-    } */
+    }
 
+}
+
+footer {
+    height: 7vh;
+    background-color: #040926;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
